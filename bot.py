@@ -4,5 +4,5 @@ app = Flask(__name__)
 
 @app.route('/run-colab')
 def run_colab():
-    gdown.download('https://drive.google.com/file/d/<colab_notebook_id>', 'colab.ipynb', quiet=False)
+    gdown.download('https://colab.research.google.com/drive/14OgNoPSSv1DtbxrkoScHq383x9rqTMxd#scrollTo=vU91ottmE1tu', 'colab.ipynb', quiet=False)
     return jsonify(message='colab notebook ran successfully')
